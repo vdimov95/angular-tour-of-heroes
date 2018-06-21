@@ -7,13 +7,17 @@ import { ClickService } from '../click.service';
   templateUrl: './clicks.component.html',
   styleUrls: ['./clicks.component.css']
 })
+
 export class ClicksComponent implements OnInit {
   clicks: string[];
+
+  clickMe() {
+    this.clicks = this.clickService.addClick('click');
+  }
 
   constructor(public clickService: ClickService) { }
 
   ngOnInit() {
-    this.clicks = this.clickService.addClick('click');
   }
 
 }

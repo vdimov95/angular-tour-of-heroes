@@ -1,5 +1,6 @@
-<div *ngIf="clickService.clicks.length">
-  <button onclick="clickMe()">Click</button>
+<br>
+<div >
+  <button (click)="clickMe()">Click Me!</button>
 
-  <div *ngFor='let click of clicks'> {{clicks}} </div>
+  <div *ngFor='let click of clicks'> {{ click }} </div>
 </div>

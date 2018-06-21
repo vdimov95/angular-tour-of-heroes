@@ -6,7 +6,6 @@ export class ClickService {
 
   addClick(click: string) {
     this.clicks.push(click);
-
     return this.clicks;
   }
 
